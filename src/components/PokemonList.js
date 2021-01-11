@@ -5,6 +5,7 @@ import {
   setPokemonDetail,
   getData,
   setAllPokemonAction,
+  setPage,
 } from '../store/actions/rootAction'
 import pokemonQuery from '../Query/pokemonQuery'
 import { SearchBox, Pagination, PokemonToDisplay } from './ChildPokemonList'
@@ -87,6 +88,7 @@ const PokemonList = () => {
   }
 
   useEffect(() => {
+    dispatch(setPage('Home'))
     if (data) {
       if (pagination.firstTimeMounted && !pagination.alreadyMounted) {
         firstMounted(pagination, data)
