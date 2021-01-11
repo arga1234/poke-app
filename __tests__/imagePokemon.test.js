@@ -1,5 +1,5 @@
 import imagePokemon from '../src/helper/imagePokemon'
-const NotAvailable = require('../src/static/image/not-available.png')
+import NotAvailable from '../src/static/image/not-available.png'
 test('imagePokemon define retun value of image', () => {
   const data1 = {
     name: 'bulbasaur',

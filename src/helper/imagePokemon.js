@@ -1,4 +1,4 @@
-const NotAvailable = require('../static/image/not-available.png')
+import NotAvailable from '../static/image/not-available.png'
 export default function imagePokemon(store) {
   let pokeImage = store.sprites.other.dream_world.front_default
 
